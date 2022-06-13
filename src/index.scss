@@ -1,11 +1,55 @@
 body {
   margin: 0;
-  font-family: system-ui;
+  font-family: 'Roboto', sans-serif, system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e7f6ff;
+  background-color: #bee;
 }
 
-code {
-  font-family: system-ui;
+.wrapper{
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  max-width: 1080px;
+  margin: 50px auto;
+  
+}
+header{
+  border-bottom: 1px solid #dadada;
+
+  h3,p{
+    margin: 0;
+  }
+}
+.content{
+  h1{
+    margin: 0;
+  }
+}
+
+.card{
+  border: 1px solid #f8f8f8;
+  padding: 20px;
+  width: 220px;
+  border-radius:10px;
+  margin-right: 30px;
+  h5{
+    font-weight: 400;
+    font-size: 16px;
+  }
+  span{
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-size: 12px;
+  }
+
+}
+.button{
+width: 32px;
+height: 32px;
+background: #FFFFFF;
+border: 1px solid #F2F2F2;
+box-sizing:border-box;
+border-radius: 8px;
+cursor: pointer;
 }
