@@ -1,6 +1,22 @@
 function App() {
   return (
     <div className="wrapper clear">
+      <div className="drawer-block">
+      <div className="drawer"> 
+        <h2>Корзина</h2>
+        <div className="d-flex align-center cartItem justify-between">
+          <img className="mr-30 ml-10" width={70} height={70} src="/img/snk/335.jpg" alt="img" />
+          <div className="cartDescription mr-30">
+            <p className="mb-5">Кроссы Кроссы Кроссы Кроссы</p>
+            <strong>1234 RUR</strong>
+          </div>
+
+          <img className="removeBtn mr-10" src="/img/btn-remove.svg" alt="remove"/>
+
+        </div>
+      </div>
+      </div>
+
       < header className = "d-flex justify-between align-center p-40" >
         < div className = "d-flex align-center" >
           <img className="mr-15" width={40} height={40} src="/img/logo.png" alt="logo"/>
@@ -76,9 +92,9 @@ function App() {
               <span>Цена</span>
               <strong>1234 RUR</strong>
             </div>
-            < button className="button"> 
+
             <img src="/img/btn-add.svg" alt="add"/>
-            </button >
+
           </div>
         </div>
         
