@@ -1,20 +1,48 @@
+import background from "./img/snk/335.jpg"
+
 function App() {
   return (
     <div className="wrapper clear">
       <div className="drawer-block">
-      <div className="drawer"> 
-        <h2>Корзина</h2>
-        <div className="d-flex align-center cartItem justify-between">
-          <img className="mr-30 ml-10" width={70} height={70} src="/img/snk/335.jpg" alt="img" />
-          <div className="cartDescription mr-30">
-            <p className="mb-5">Кроссы Кроссы Кроссы Кроссы</p>
-            <strong>1234 RUR</strong>
+        <div className="drawer">
+          <h2 className="mb-30">Корзина</h2>
+          <div className="items">
+            <div className="d-flex align-center cartItem justify-between mb-20">
+              {/* <img className="mr-30 ml-10" width={70} height={70} src="/img/snk/335.jpg" alt="img" /> */}
+              <div style = {{backgroundImage: `url(${background})`}}className = "cartItemImg mr-30 ml-10" ></div>
+              <div className="cartDescription mr-30">
+                <p className="mb-5">Кроссы Кроссы Кроссы Кроссы</p>
+                <strong>1234 RUR</strong>
+              </div>
+              <img className="removeBtn mr-10" src="/img/btn-remove.svg" alt="remove"/>
+            </div>
+
+            <div className = "d-flex align-center cartItem justify-between mb-20" > 
+            {/* <img className="mr-30 ml-10" width={70} height={70} src="/img/snk/335.jpg" alt="img" /> */ } 
+            <div style = {{backgroundImage: `url(${background})`}} className = "cartItemImg mr-30 ml-10" > </div> 
+            <div className = "cartDescription mr-30" >
+              <p className = "mb-5" > Кроссы Кроссы Кроссы Кроссы </p>
+              <strong> 1234 RUR </strong> </div>
+              <img className = "removeBtn mr-10" src = "/img/btn-remove.svg" alt = "remove"/>
+            </div>
+          </div>
+          <div class="cartTotalBlock">
+            < ul className = "cartTotalBlock" >
+              <li className = "d-flex">
+                <span> Итого: </span> 
+                <div> </div> 
+                <strong > 1234 RUR </strong> 
+              </li>
+              <li className = "d-flex" >
+                <span> Налог 5 %: </span>
+                <div></div> 
+                <strong> 123 RUR </strong> 
+              </li> 
+            </ul>
+            < button > < span > Оформить заказ </span><img className="orderRright" src="/img/right.svg" alt="order"/></button >
           </div>
 
-          <img className="removeBtn mr-10" src="/img/btn-remove.svg" alt="remove"/>
-
         </div>
-      </div>
       </div>
 
       < header className = "d-flex justify-between align-center p-40" >
