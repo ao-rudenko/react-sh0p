@@ -101,7 +101,9 @@ input{
 
   }
   .items{
-    height: 80%;
+    flex:1;
+    overflow: auto;
+    margin-bottom: 40px;
   }
 }
 .cartItem{
@@ -135,7 +137,6 @@ input{
 }
 .cartTotalBlock{
   ul{
-    
     li{
     display: flex;
     align-items: flex-end;
@@ -150,7 +151,7 @@ input{
       }
     }
   }
-  button{
+  .greenButton{
     width: 100%;/* Rectangle 25 */
     height: 55px;
     background: #9DD558;
@@ -162,8 +163,16 @@ input{
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
+    transition: background 0.2s ease-in-out;
     span{
       margin-left:60px ;
+    }
+    &:hover{
+      background: lighten($color: #7a2, $amount: 5%);
+      
+    }
+    &:active{
+      background: darken($color: #7a2, $amount: 5%);
     }
     }
 }
