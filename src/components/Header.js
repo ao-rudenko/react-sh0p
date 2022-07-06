@@ -15,7 +15,7 @@ export const Header = () => {
           alt = "logo" / >
               <div >
               <h3 className = "m-0 text-uppercase" > React shop </h3> 
-              <p className = "m-0 opacity-5" > Магазин </p>  
+              < p className = "m-0 opacity-5" >Магазин</p >
               </div> </div> <ul className = "d-flex" >
               <li className = "mr-30" >
               <svg
