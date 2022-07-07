@@ -51,7 +51,7 @@ function App() {
       <Header/>
       <div className="content p-40 ">
         <div className="d-flex align-center m-0 mb-40 justify-between">
-          <input placeholder = "Поиск" / >
+          <input placeholder = "Поиск"/>
           <h1>  All products</h1>
           <div className="search-block d-flex pl-10"> 
             <img src="./img/search.svg" alt="Search"/>
@@ -59,7 +59,7 @@ function App() {
             
           </div>
         </div>
-        <div className="card-field d-flex">
+        <div className="card-field d-flex flex-wrap">
             {/* Карточки товара */}
             {
               arr.map(obj => ( 
@@ -67,8 +67,7 @@ function App() {
               name = {obj.name}
               price = {obj.price}
               imageUrl = {obj.imageUrl}
-              onClick = {() => console.log(obj)
-              }
+              onClick = {() => console.log(obj)}
               />
               ))
               }
