@@ -1,10 +1,10 @@
 import React from 'react'
 import background from "../img/snk/335.jpg"
-export const Drawer = () => {
+export const Drawer = (props) => {
   return (
-    < div style = {{display: "none"}} className = "drawer-block" >
+    < div className = "drawer-block" >
     <div className = "drawer">
-        <h2 className = "mb-30 d-flex justify-between"> Корзина <img className = "cu-p" src = "/img/btn-remove.svg" alt = "remove"/></h2>
+        <h2 className = "mb-30 d-flex justify-between"> Корзина <img  onClick={props.onClose} className = "cu-p" src = "/img/btn-remove.svg" alt = "Close"/></h2>
         <div className = "items">
             <div className = "d-flex align-center cartItem justify-between mb-20">
                 {/* <img className="mr-30 ml-10" width={70} height={70} src="/img/snk/335.jpg" alt="img" /> */ }
