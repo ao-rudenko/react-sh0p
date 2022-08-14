@@ -5,8 +5,10 @@ function Card({  onClickFavorite,  imageUrl,  name,  price,  onClick_addCart
 }) {
   const [isAdded, setIsAdded] =React.useState(false);
   const onClickPlus = () =>{
-    onClick_addCart({name, imageUrl, price });
+    onClick_addCart({name, imageUrl, price});
     setIsAdded(!isAdded);
+    // console.log(id);
+    
   }
   
   return (

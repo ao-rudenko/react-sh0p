@@ -40,14 +40,15 @@ function App() {
         <div className="card-field d-flex flex-wrap">
             {/* Карточки товара */}
             {
-              items.map(item => (
-              <Card 
-              name = {item.name}
-              price = {item.price}
-              imageUrl = {item.imageUrl}
-              onClickFavorite={()=> console.log("+1")}
-              onClick_addCart = {(obj) =>onAddToCart(obj)}
-              />
+              items.map((item, id) => (
+                <Card 
+                  key = {id}
+                  name = {item.name}
+                  price = {item.price}
+                  imageUrl = {item.imageUrl}
+                  onClickFavorite={()=> console.log("+1")}
+                  onClick_addCart = {(obj) =>onAddToCart(obj)}
+                />
               ))
               }
               
