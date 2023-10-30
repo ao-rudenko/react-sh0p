@@ -8,6 +8,7 @@ function App() {
   
   const [items, setItems] = React.useState([]);
   const [cartItems, setCartItems] = React.useState([]);
+  const [searchValue, setSearchValue] = React.useState('');
   const [cartOpened, setCartOpened] = React.useState(false);
 
   React.useEffect(()=>{
@@ -24,25 +25,32 @@ function App() {
     setCartItems(prev => [...prev, obj]);
   }
 
+  const onChangeSearchInput= (event)=>{
+    
+    setSearchValue(event.target.value);
+  }
+
   return (
     <div className="wrapper clear">
       {cartOpened &&<Drawer items={cartItems} onClose={()=>setCartOpened(false)}/>}
       <Header onClickCart={()=>setCartOpened(true)} />
       <div className="content p-40 ">
         <div className="d-flex align-center m-0 mb-40 justify-between">
-          <h1>  All products</h1>
+          <h1> {searchValue ? `Поиск по запросу: "${searchValue}"` : "All products"} </h1>
           <div className="search-block d-flex pl-10"> 
             <img src="./img/search.svg" alt="Search"/>
-            <input placeholder="Поиск"/>
+            < input onChange = {onChangeSearchInput} value={searchValue}
+            placeholder = "Поиск" / >
             
           </div>
         </div>
         <div className="card-field d-flex flex-wrap">
             {/* Карточки товара */}
             {
-              items.map((item, id) => (
+              items.map((item) => (
                 <Card 
-                  key = {id}
+                  key = {item.vendorCode}
+                  v_code = {item.vendorCode}
                   name = {item.name}
                   price = {item.price}
                   imageUrl = {item.imageUrl}

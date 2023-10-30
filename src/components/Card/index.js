@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Card.module.scss';
 
-function Card({  onClickFavorite,  imageUrl,  name,  price,  onClick_addCart
+function Card({  onClickFavorite,  imageUrl,  name,  price,  onClick_addCart, v_code
 }) {
   const [isAdded, setIsAdded] =React.useState(false);
   const onClickPlus = () =>{
@@ -17,6 +17,9 @@ function Card({  onClickFavorite,  imageUrl,  name,  price,  onClick_addCart
         <img width = {32} height = {32} src = "/img/like-inactive.svg" alt = "#"/>
       </div>
       <img width = {133} height = {112} src = {imageUrl}  alt = "snk" />
+      <div>
+        <span>{v_code}</span>
+      </div>
       <h5>{name}</h5> 
       <div className = "d-flex justify-between align-center">
         <div className = "d-flex flex-column" >
