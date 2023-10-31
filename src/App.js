@@ -22,7 +22,9 @@ function App() {
   },[]);
 
   const onAddToCart= (obj)=>{
-    setCartItems(prev => [...prev, obj]);
+    if (!obj){
+      setCartItems(prev => [...prev, obj]);
+    }
   }
 
   const onChangeSearchInput= (event)=>{
@@ -40,7 +42,8 @@ function App() {
           <div className="search-block d-flex pl-10"> 
             <img src="./img/search.svg" alt="Search"/>
             < input onChange = {onChangeSearchInput} value={searchValue}
-            placeholder = "Поиск" / >
+            placeholder = "Поиск" />
+            <img className="clear cu-p" src="/img/btn-remove.svg" alt="Close" />
             
           </div>
         </div>
