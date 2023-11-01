@@ -1,0 +1,74 @@
+[
+    {
+"vendorCode": 100001,
+"name": "Мужские Кроссовки Nike Blazer Mid Suede",
+"price": 1234,
+"imageUrl": "./img/snk/1.jpg"
+    },
+    {
+"vendorCode": 100002,
+"name": "Мужские Кроссовки Nike Air Max 270",
+"price": 1234,
+"imageUrl": "./img/snk/2.jpg"
+    },
+    {
+"vendorCode": 100003,
+"name": "Мужские Кроссовки Nike Blazer Mid Suede",
+"price": 1234,
+"imageUrl": "./img/snk/3.jpg"
+    },
+    {
+"vendorCode": 100004,
+"name": "Кроссовки Puma X Aka Boku Future Rider",
+"price": 1234,
+"imageUrl": "./img/snk/4.jpg"
+    },
+    {
+"vendorCode": 100005,
+"name": "Мужские Кроссовки Nike Blazer Mid Suede",
+"price": 1234,
+"imageUrl": "./img/snk/1.jpg"
+    },
+    {
+"vendorCode": 100006,
+"name": "Мужские Кроссовки Nike Air Max 270",
+"price": 1234,
+"imageUrl": "./img/snk/2.jpg"
+    },
+    {
+"vendorCode": 100007,
+"name": "Мужские Кроссовки Nike Blazer Mid Suede",
+"price": 1234,
+"imageUrl": "./img/snk/3.jpg"
+    },
+    {
+"vendorCode": 100008,
+"name": "Кроссовки Puma X Aka Boku Future Rider",
+"price": 1234,
+"imageUrl": "./img/snk/4.jpg"
+    },
+    {
+"vendorCode": 100009,
+"name": "Мужские Кроссовки Nike Blazer Mid Suede",
+"price": 1234,
+"imageUrl": "./img/snk/1.jpg"
+    },
+    {
+"vendorCode": 100010,
+"name": "Мужские Кроссовки Nike Air Max 270",
+"price": 1234,
+"imageUrl": "./img/snk/2.jpg"
+    },
+    {
+"vendorCode": 100011,
+"name": "Мужские Кроссовки Nike Blazer Mid Suede",
+"price": 1234,
+"imageUrl": "./img/snk/3.jpg"
+    },
+    {
+"vendorCode": 100012,
+"name": "Кроссовки Puma X Aka Boku Future Rider",
+"price": 1234,
+"imageUrl": "./img/snk/4.jpg"
+    }
+]

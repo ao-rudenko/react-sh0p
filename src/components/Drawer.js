@@ -1,4 +1,4 @@
-function Drawer({ onClose, items=[]}){
+function Drawer({ onClose,onRemove, items=[]}){
   return (
     < div className = "drawer-block" >
         <div className = "drawer">
@@ -11,10 +11,11 @@ function Drawer({ onClose, items=[]}){
                         <div style = {{backgroundImage: `url(${obj.imageUrl})`}} className = "cartItemImg mr-30 ml-10" >
                         </div>
                         <div className = "cartDescription mr-30" > 
+                            <p className = "mb-5"> {obj.v_code} </p>
                             <p className = "mb-5"> {obj.name} </p>
                             <strong > {obj.price} RUR</strong>
                         </div> 
-                        <img className = "removeBtn mr-10" src = "/img/btn-remove.svg" alt = "remove" />
+                        <img onClick={()=> {onRemove(obj.v_code)}} className = "removeBtn mr-10" src = "/img/btn-remove.svg" alt = "remove" />
                     </div>
                 ))}
             </div>
